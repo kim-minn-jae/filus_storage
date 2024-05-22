@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogInActivity">
+
+
+    <ImageView
+        android:id="@+id/profile_imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/darker_gray"
+        android:contentDescription="Profile Image"
+        android:scaleType="centerCrop" />
+
+    <EditText
+        android:id="@+id/nickname_edit"
+        android:layout_below="@id/profile_imageView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/edit_background"
+        android:hint="닉네임"
+        android:inputType="textEmailAddress"
+        android:paddingStart="15dp"
+        />
+
+    <EditText
+        android:id="@+id/country_edit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/nickname_edit"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/edit_background"
+        android:hint="국적"
+        android:inputType="textEmailAddress"
+        android:paddingStart="15dp"
+        />
+ㅡ
+    <EditText
+        android:id="@+id/language_edit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/edit_background"
+        android:layout_below="@id/country_edit"
+        android:hint="사용가능한 언어"
+        android:inputType="textEmailAddress"
+        android:paddingStart="15dp"
+        />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/selectImage_Btn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/language_edit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_background"
+        android:text="이미지 선택"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/SubmitProfile_Btn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selectImage_Btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_background"
+        android:text="프로필 제출"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"/>
+
+
+</RelativeLayout>
